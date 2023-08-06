@@ -10,7 +10,7 @@ sys_call.c is a C file which defclares system calls intialize_bar(), customer_ar
 
 In order to compile `kernel-module-demo`, clone the GitHub Repository and execute `make`.
 
-Make sure that system calls intialize_bar, customer_arrival, and close_bar are defined in (KERNELDIR)/arch/x86/entry/syscall/syscall_64.tbl as labels 548, 549, and 550 - respectively. Make sure the system calls are also defined in (KERNELDIR)/include/linux/syscalls.h. Finally in the /lib/modules/5.15.102/build/Makefile make sure the directory where all the source files is defined like so, core-y+= kernel/ certs/ mm/ fs/ ipc/ security/ crypto/ (DIRECTORYNAME)/
+Make sure that system calls intialize_bar, customer_arrival, and close_bar are defined in `(KERNELDIR)/arch/x86/entry/syscall/syscall_64.tbl` as labels 548, 549, and 550 - respectively. Make sure the system calls are also defined in `(KERNELDIR)/include/linux/syscalls.h`. Finally in the `/lib/modules/5.15.102/build/Makefile` make sure the directory where all the source files is defined like so, `core-y+=kernel/certs/mm/fs/ipc/security/crypto/(DIRECTORYNAME)/`.
 
 ## Project Milestones
 |Milestone|Description|
